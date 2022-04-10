@@ -80,6 +80,10 @@
     border-radius: 10px;
 }
 
+.caruselItem div:hover{
+    cursor: pointer;
+}
+
 .caruselItem h2 {
     font-size: 1.2em;
     font-weight: 400;
@@ -117,7 +121,7 @@
 }
 @media(max-width:1400px){
     .caruselItem{
-        min-width: 50%;
+        min-width: 49.5%;
     }
 }
 
