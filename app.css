@@ -148,12 +148,54 @@ h2 {
     background-size: cover;
     background-position: 15% 15%;
 }
+
+
+/* signIn */
+.signIn {
+    margin: 300px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.5em;
+    color: white;
+    border: 3px solid whitesmoke;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.814385150812065) 0%, rgba(0, 0, 0, 0.6979166666666667) 1%, rgba(0, 212, 255, 0) 100%);
+    background-color: #415a77;
+    width: 500px;
+    height: 350px;
+}
+
+
+.signIn div {
+    overflow: hidden;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 1.5em;
+    font-family: 'Lobster', cursive;
+}
+
+.signIn button {
+    font-size: 1.4em;
+    width: 100px;
+    height: 50px;
+}
+
+.signIn #quitSignIn {
+    font-size: 25px;
+    position: relative;
+    bottom: 300px;
+    left: 225px;
+}
+
 /* footer footer footer footer footer footer footer footer footer footer footer footer footer footer */
 footer {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.814385150812065) 0%, rgba(0, 0, 0, 0.6979166666666667) 17%, rgba(0, 212, 255, 0) 100%);
     background-color: #415a77;
     color: whitesmoke;
-    padding:50px 0;
+    padding: 50px 0;
     border-top: #f5f3f4;
 }
 
@@ -172,13 +214,13 @@ footer .container {
     display: flex;
 }
 
-footer .links{
+footer .links {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
 }
 
-footer .links h2{
+footer .links h2 {
     font-size: 1em;
 }
 
@@ -202,8 +244,26 @@ footer .links h2{
         width: 400px;
         font-size: 1.5em;
     }
+    .signIn{
+        border-radius: 0;
+        margin-top: 0;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .hidden {
     display: none;
+    transition: 300ms;
+}
+
+.blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6979166666666667);
+    backdrop-filter: blur(5px);
+    z-index: 99999999999999999999999999;
 }

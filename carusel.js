@@ -82,3 +82,11 @@ prevButton.addEventListener("click", function () {
     }
     // console.log(caruselItems[0].style.transform)
 })
+
+let caruselItemDiv = document.querySelector(".caruselItem:nth-of-type(2) div")
+console.log(caruselItemDiv);
+caruselItemDiv.addEventListener("click",()=>{
+    console.log("pressed")
+    window.location.href="productPage.html";
+   
+})
