@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 5;
 }
 
 #navbar ul, li {
@@ -39,14 +40,6 @@
     font-family: 'Lobster', cursive;
     font-size: 2em;
     text-decoration: none;
-}
-
-
-#accountIcon {
-    top: 46px;
-    right: 12em;
-    position: absolute;
-    height: 40px;
 }
 
 #navbar input {
@@ -110,18 +103,20 @@
     }
 
     #accountIcon {
-        top: 52px;
+        top: 60px;
         right: 4em;
+        position: absolute;
     }
 }
 
-@media(max-width:500px) {
+@media(max-width:600px) {
     #navbar {
         padding-top: 32px;
         font-size: 15px;
     }
+
     #accountIcon {
-        top: 40px;
+        top: 55px;
         right: 4em;
     }
 }

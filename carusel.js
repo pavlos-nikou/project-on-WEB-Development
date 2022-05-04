@@ -11,13 +11,13 @@ window.onresize = function () {
 }
 function setCarusel() {
     let margin = 5
-let caruselItems = document.querySelectorAll(".caruselItem")
-let position = 0
-for (const element of caruselItems) {
-    element.style.transform = `translateX(${position}px)`
-    console.log(element.style.transform);
-    position += margin
-}
+    let caruselItems = document.querySelectorAll(".caruselItem")
+    let position = 0
+    for (const element of caruselItems) {
+        element.style.transform = `translateX(${position}px)`
+        console.log(element.style.transform);
+        position += margin
+    }
 }
 
 let margin = 5
@@ -85,8 +85,7 @@ prevButton.addEventListener("click", function () {
 
 let caruselItemDiv = document.querySelector(".caruselItem:nth-of-type(2) div")
 console.log(caruselItemDiv);
-caruselItemDiv.addEventListener("click",()=>{
+caruselItemDiv.addEventListener("click", () => {
     console.log("pressed")
-    window.location.href="productPage.html";
-   
+    window.location.href = "productPage.html";
 })

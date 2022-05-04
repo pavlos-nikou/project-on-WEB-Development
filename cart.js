@@ -1,4 +1,4 @@
-let cartButton = document.querySelector(".cart img")
+let cartButton = document.querySelector(".cart #cartIcon")
 cartButton.addEventListener("click",()=>{
   let cart = document.querySelector(".cart")
   cart.classList.add("expand")
