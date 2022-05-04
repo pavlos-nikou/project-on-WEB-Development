@@ -12,6 +12,7 @@
     transition: 300ms ease-in-out;
     overflow: hidden;
     background-color: crimson;
+    z-index: 999999;
 }
 
 .cartHeader {
@@ -27,7 +28,7 @@
 
 .cart #cartIcon {
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 25px;
     width: 70px;
     height: 70px;
 }
@@ -38,7 +39,7 @@
     border-radius: 50px;
     bottom: 15px;
     right: 15px;
-    z-index: 999999;
+    
 }
 
 #cartQuitButton {
